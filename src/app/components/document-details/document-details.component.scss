@@ -1,0 +1,94 @@
+.details-container,
+.form-inline,
+.form-button,
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details {
+    &-container {
+        width: 600px;
+        height: 450px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .col-1 {
+            width: 350px;
+            height: 270px;
+            display: grid;
+            place-items: center;
+
+            .pdf {
+                max-width: 150px;
+            }
+        }
+
+        .col-2 {
+            width: 200px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .form-inline {
+            flex-direction: row;
+        }
+
+        .form-group {
+            gap: 5px;
+        }
+
+        .form-button {
+            align-items: flex-end;
+        }
+        
+        .form-text {
+            background: rgba(128, 128, 128, 0.5);
+            width: 180px;
+            height: 30px;
+            border-radius: 5px;
+            padding: 5px;
+            overflow: hidden;
+            text-transform: capitalize;
+        }
+        
+        .form-textarea {
+            background: rgba(128, 128, 128, 0.5);
+            width: 560px;
+            height: 60px;
+            border-radius: 5px;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        
+    }
+
+    &-none {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+}

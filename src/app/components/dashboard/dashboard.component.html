@@ -1,0 +1,12 @@
+<div class="dashboard-container">
+    <h2>Dashboard</h2>
+    <div class="dashboard-box">
+        <div class="dashboard-items" *ngFor="let document of documents">
+            <a class="dashboard-link" [routerLink]="['/document', document.id]">
+                <span>{{ document.title }}</span>
+                <span>{{ document.author }}</span>
+                <span>{{ document.date | date: 'dd-MM-yyyy h:mm' }}</span>
+            </a>
+        </div>
+    </div>
+</div>

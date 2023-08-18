@@ -1,0 +1,34 @@
+.upload-container,
+.form-inline,
+.form-group,
+.form-button,
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upload {
+    &-container {
+        width: 600px;
+        height: 350px;
+        justify-content: flex-start;
+        align-items: center;
+
+        .form-inline {
+            flex-direction: row;
+        }
+
+        .form-group {
+            gap: 5px;
+        }
+
+        .form-button {
+            align-items: center;
+        }
+
+        textarea {
+            height: 80px;
+        }
+    }
+}

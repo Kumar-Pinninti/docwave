@@ -1,0 +1,31 @@
+.login-container,
+.form-group,
+.form-button,
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login {
+    &-container {
+        width: 400px;
+        height: 230px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &-form {
+        .form-group {
+            gap: 10px;
+        }
+
+        .form-button {
+            align-items: center;
+        }
+
+        input {
+            width: 350px;
+        }
+    }
+}

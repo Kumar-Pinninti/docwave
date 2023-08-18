@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default margin for body */
+body {
+  margin: 0;
+}
+
+/* Reset anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set font size and family */
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Set default background and text colors */
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Remove outline on active elements */
+a,
+button,
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* Clear button styles */
+button {
+  background: rgb(45, 19, 240);
+  color: #ffffff;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+button:hover,
+button:focus {
+  background: rgb(241, 240, 247);
+  color: rgb(45, 19, 240);
+  border: 1px solid rgb(45, 19, 240);
+}
+
+img {
+  width: 100%;
+}
+
+h2,
+label {
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.525);
+  outline: none;
+  padding: 0;
+  background: transparent;
+}
+
+input:focus {
+  background: #ffffff;
+}
+
+input[type = file] {
+  border: none;
+}

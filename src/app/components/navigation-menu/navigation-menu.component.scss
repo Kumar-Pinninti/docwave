@@ -1,0 +1,49 @@
+.navbar,
+.logo,
+.list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+} 
+
+
+.navbar {
+    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 18px;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+
+    .image {
+        width: 30px;
+    }
+
+    .list {
+        padding: 1rem;
+        width: 400px;
+        flex-direction: row;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  
+      &:hover,
+      &:focus {
+        color: #ffd700;
+      }
+    }
+    
+    .active-link {
+      color: #ffd700;
+      font-weight: bold;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+<div class="upload-container">
+    <h2>Upload Document</h2>
+    <div class="upload-form">
+        <form (ngSubmit)="uploadDocument()" #documentForm="ngForm">
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" [(ngModel)]="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" [(ngModel)]="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <input type="text" id="category" name="category" placeholder="eg: action" [(ngModel)]="category" required>
+                </div>
+            </div>
+
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="version">Version</label>
+                    <input type="text" id="version" name="version" placeholder="eg: 1.2" [(ngModel)]="version" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="file">File</label>
+                    <input type="file" id="file" name="file" (change)="onFileChange($event)" accept="image/*,video/*,.pdf" required>
+                </div>  
+            </div>
+            
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" [(ngModel)]="content" required></textarea>
+            </div>
+
+            <div class="form-button">
+                <button type="submit">Upload</button>
+            </div>
+        </form>
+    </div>
+</div>
+  
